@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Card</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script>
+
+        $(document).ready(function(){
+            $('#add_user').click(function(){
+                var firstname= $('#first_name').val();
+                var lastname= $('#last_name').val();
+                var description = $('#descrp_box').val();
+                $('#contact_display_box').append('<div class="new_box"><p>' + firstname + " " + lastname + '</p><p class="back">' + description + '</p></div>');
+                
+                return false;
+                });
+
+                $(document).on('click', '.new_box', function(){
+				$(this).children().toggle();
+            });
+
+
+        });
+    
+    </script>
+</head>
+<body>
+    <form action="">
+        <label for="first_name">First Name:</label>
+        <input id="first_name" type="text" value=""><br>
+        <label for="last_name">Last Name:</label>
+        <input id="last_name" type="text" value="">
+    </form>
+
+    <p>Description:</p>
+
+    <textarea id="descrp_box"  name="" cols="30" rows="15" value=""></textarea>
+
+    <button id="add_user">Add User</button>
+
+    <div id="contact_display_box">
+        
+        
+       
+
+
+    </div>
+
+
+
+
+
+</body>
+</html>

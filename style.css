@@ -1,0 +1,26 @@
+input{
+    width: 100px;
+    margin: 5px;
+}
+
+textarea{
+    display: block;
+}
+
+#add_user{
+    margin: 50px;
+}
+
+.new_box{
+    width: 100px;
+    height: 75px;
+    background-color: green;
+    border: 1px solid black;
+    margin: 5px 0;
+    text-align: center;
+   
+}
+
+.back{
+    display: none;
+}
